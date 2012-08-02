@@ -7,4 +7,8 @@ class StaticPagesController < ApplicationController
   end
   def contact
   end
+  def grid
+  end
+  def font
+  end
 end
