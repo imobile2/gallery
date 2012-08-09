@@ -7,8 +7,16 @@ class StaticPagesController < ApplicationController
   end
   def contact
   end
+  # for gallery
+  def guidelines
+  end
   def grid
   end
   def font
+  end
+  def violator
+  end
+  def nav
+    render :layout => "layouts/nav.html.erb"
   end
 end

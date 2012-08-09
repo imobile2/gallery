@@ -23,9 +23,13 @@ SampleApp::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
   
   # gallery related
-  
+
+  match '/guidelines',    to: 'static_pages#guidelines'  
   match '/grid',    to: 'static_pages#grid'
   match '/font',    to: 'static_pages#font'
+
+  match '/violator',    to: 'static_pages#violator'
+  match '/nav',    to: 'static_pages#nav'
   
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:

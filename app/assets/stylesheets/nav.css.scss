@@ -1,0 +1,131 @@
+@import "bootstrap";
+/* top header*/
+#ilogo {
+	display: block;
+/*	position: absolute;*/
+	left: 0;
+	top: 20px;
+
+	background: url(logo.svg) repeat 0 0;
+	background-size: 240px;
+	overflow: hidden;
+	width: 100px;
+	height: 35px;
+	margin: 30px 10px;
+/*	text-indent: -9999px;*/
+}
+/* end of top header*/
+.navbar {
+/*	position: relative;*/
+}
+#dock {
+	background-color: #365EBF;
+/*	height:10px;*/
+	position:fixed;
+	top: -70px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	opacity: .8;
+	-webkit-transition-property: top, opacity;
+    -webkit-transition-duration: .6s;
+	.container {
+		width: 960px;
+	}
+	.nav > li > a {
+		color: #fefefe;
+		padding: 10px;
+	}
+}
+.hide {
+	opacity: 0;
+}
+.show {
+	opacity: .8;
+}
+#dock.expand {
+	top: 0;
+}
+
+
+.nav-wrapper {
+	height: 40px;
+}
+.nav-container {
+	
+	div {
+/*		width:940px;*/
+/*		padding:10px;*/
+/*		outline: 1px solid #aaa;*/
+/*		margin: 20px 0;*/
+	}
+	#hero {
+		height:460px;
+		
+	}
+	#features {
+		height: 570px;		
+	}
+	#works {
+		height: 570px;
+	}
+	#pricing {
+		height: 600px;
+	}
+	#reviews {
+		height: 700px;
+	}
+	#hero, #features, #works, #pricing, #reviews {
+		padding-top: 40px;
+		margin: 10px 0;
+		border: #eee 5px solid;
+		h1 {
+			padding-left: 20px;
+		}
+	}
+}
+#navbar1 {
+	background-color:#365EBF;
+	background-image:url("");
+	-webkit-transition: top, position 1s ease-in-out;
+    .nav > li > a {
+		color: #fafafa;
+	}
+}
+.navbar-fixed-top {
+/*	-webkit-transition-property: top, position;
+    -webkit-transition-duration: 1s ease-in;*/
+	-webkit-transition: top, 1.5s ease-in-out;
+}
+#navblock1 {
+	height: 80px;
+	background-color: #eee;
+	opacity: .8;
+}
+#navbar4 {
+	outline: 0;
+	ul {
+		margin: 12px 0;
+	}
+	ul li {
+		display: inline-block;
+		padding: 0 10px;
+		font-size: 16px;
+	}
+	-webkit-transition-property: top, opacity, position, z-index;
+    -webkit-transition-duration: .2s;
+}
+.fixed2 {
+	position: fixed;
+	top: 40px;
+	left: 0;
+	right: 0;
+	background-color: #eee;
+
+	opacity: 1;
+	z-index: 1000;
+	.nav > li > a {
+		color: #365EBF;
+	}
+/*	padding: 20px 0 0;*/
+}

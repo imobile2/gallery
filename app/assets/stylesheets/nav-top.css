@@ -1,0 +1,187 @@
+body {
+	font: 12px "Verdana", "Tahoma", "Helvetica", "Arial", sans-serif;
+}
+
+a {
+	color: #2B73DD;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+nav {
+	position: relative;
+}
+
+nav > ul > li {
+	float: left;
+	vertical-align: top;
+}
+
+#eyebrow {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+#eyebrow > li {
+	padding-left: 30px;
+}
+
+#eyebrow > li > a {
+	display: block;
+	padding: 4px 0 5px 0;
+}
+
+.menu {
+	background: url(menu.svg) no-repeat right 10px;
+	padding-right: 15px;
+}
+
+.menu > ul {
+	display: none;
+}
+
+.menu:hover > ul {
+	display: block;
+	position: absolute;
+
+	width: 240px;
+	padding: 0 10px;
+	border-radius: 0 5px 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+	background: #fff;
+	z-index: 2;
+}
+
+.menu li a {
+	display: block;
+	padding: 5px 0;
+}
+
+
+
+#logo.QuickBooks {
+	width: 240px;
+}
+
+#logo.PayrollServices {
+	width: 240px;
+	background-position: 0 -39px;
+}
+
+#logo.MerchantServices {
+	width: 240px;
+	background-position: 0 -78px;
+}
+
+#logo.CreateaWebsite {
+	width: 240px;
+	background-position: 0 -117px;
+}
+
+#navContainer {
+	position: absolute;
+	left: 0;
+	top: 70px;
+
+	display: table;
+	width: 100%;
+}
+
+#primaryNav {
+	display: table-row;
+}
+
+#primaryNav > li {
+	display: table-cell;
+}
+
+#primaryNav > li > a {
+	display: block;
+	background: #365ebf;
+	padding: 10px 0;
+	text-align: center;
+	font: bold 14px "FS Albert Web", "Trebuchet MS", "Verdana", "Tahoma", "Helvetica", "Arial", sans-serif;
+}
+
+#primaryNav > li > a {
+	border-left: 1px solid #254dae;
+}
+
+#primaryNav > li:first-child > a {
+	border-left: none;
+	border-radius: 18px 0 0 18px;
+}
+
+#primaryNav > li:last-child > a {
+	border-radius: 0 18px 18px 0;
+}
+
+#primaryNav > li:hover > a {
+	background: #3d6cd9;
+	text-decoration: none;
+}
+
+#primaryNav > li.menu {
+	background: none;
+	padding-right: 0;
+}
+
+#primaryNav > li.menu:first-child:hover > a {
+	border-radius: 18px 0 0 0;
+}
+
+#primaryNav > li.menu:last-child:hover > a {
+	border-radius: 0 18px 0 0;
+}
+
+#primaryNav > li.menu > ul {
+	background: #365ebf;
+	border-radius: 0 0 5px 5px;
+}
+
+#primaryNav > li.menu > ul > li > a {
+	color: #fff;
+}
+
+#primaryNav > li.menu > ul > li:hover {
+	background: #3d6cd9;
+}
+
+#primaryNav > li.menu > ul > li > a:hover {
+	text-decoration: none;
+}
+
+#primaryNav > li > a {
+	color: #fff;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#site {
+	position: absolute;
+	top: 117px;
+	overflow: hidden;
+	width: 950px;
+	height: 2000px;
+}
+
+#site iframe {
+	position: absolute;
+	left: -25px;
+	top: -117px;
+}
+
+#site div {
+	background: rgba(255,255,255,0.75);
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 2000px;
+}

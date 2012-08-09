@@ -1,11 +1,20 @@
-<header class="navbar navbar-fixed-top">
+<!-- <div class="navbar navbar-fixed-top"> -->
+<div class="navbar">
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "Gallery", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Help", help_path %></li>
+          <!-- <li><%= link_to "Home", root_path %></li> -->
+          <li><%= link_to "Guidelines", guidelines_path %></li>
+					<!-- <li><%= link_to "Help", help_path %></li> -->
+          <li><%= link_to "Grid", grid_path %></li>
+					<li><%= link_to "Font", font_path %></li>
+					<li><%= link_to "Navigation", root_path %></li>
+					<li><%= link_to "Templates", root_path %></li>
+					<li><%= link_to "Examples", root_path %></li>
+
+          <!-- <li><%= link_to "Help", help_path %></li>
           <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">
@@ -23,38 +32,32 @@
             </li>
           <% else %>
             <li><%= link_to "Sign in", signin_path %></li>
-          <% end %>
+          <% end %> -->
         </ul>
       </nav>
     </div>
   </div>
-	<div class="subnav subnav-fixed">
-	    <ul class="nav nav-pills">
-				<li><a href="#grid">Grid</a></li>
-				<li><a href="#font">Font</a></li>
-	      <!-- <li class="dropdown active">
-	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Grid<b class="caret"></b></a>
-	        <ul class="dropdown-menu">
-	          <li class="active"><a href="#buttonGroups">Button</a></li>
-	          <li><a href="#buttonDropdowns">Button dropdowns</a></li>
-	        </ul>
-	      </li> -->
-	      <li class="dropdown">
-	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Navigation <b class="caret"></b></a>
-	        <ul class="dropdown-menu">
-	          <li><a href="#navs">Nav, tabs, pills</a></li>
-	          <li><a href="#navbar">Navbar</a></li>
-	          <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-	          <li><a href="#pagination">Pagination</a></li>
-	        </ul>
-	      </li>
-	      <!-- <li><a href="#labels">Labels</a></li>
-	      <li><a href="#badges">Badges</a></li>
-	      <li><a href="#typography">Typography</a></li>
-	      <li><a href="#thumbnails">Thumbnails</a></li>
-	      <li><a href="#alerts">Alerts</a></li>
-	      <li><a href="#progress">Progress bars</a></li>
-	      <li><a href="#misc">Miscellaneous</a></li> -->
-	    </ul>
-	  </div>
-</header>
+</div>
+<div class="navbar dock hide">
+	<div class="nav-wrapper">	
+		<ul class="nav">
+			<li><%= link_to "Payroll Services", root_path %></li>
+			<li><%= link_to "Employee Benefits", root_path %></li>
+			<li><%= link_to "Payroll 101", root_path %></li>
+			<li><%= link_to "Hiring Employees", root_path %></li>
+			<li><%= link_to "Support", root_path %></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="nav-wrapper">
+		<ul class="nav">
+			<li><%= link_to "Features", root_path %></li>
+			<li><%= link_to "How it Works", root_path %></li>
+			<li><%= link_to "Pricing", root_path %></li>
+			<li><%= link_to "Reviews", root_path %></li>
+			<li></li>
+		</ul>		
+	</div>
+
+</div>
+
