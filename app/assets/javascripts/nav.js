@@ -49,4 +49,10 @@ jQuery(function() {
 	function() {
 		$(this).removeClass("expand");
 	});
+	$("#navbar3").click(function() {
+		var dock = $("#dock");
+		if (dock.hasClass("expand")) {
+			dock.removeClass("expand");
+		}		
+	});
 });
