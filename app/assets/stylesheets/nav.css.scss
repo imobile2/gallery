@@ -12,23 +12,16 @@
 	width: 100px;
 	height: 35px;
 	margin: 30px 10px;
-/*	text-indent: -9999px;*/
 }
 /* end of top header*/
-.navbar {
-/*	position: relative;*/
-}
 #dock {
 	background-color: #365EBF;
-/*	height:10px;*/
 	position:fixed;
 	top: -70px;
 	left: 0;
 	right: 0;
 	width: 100%;
 	opacity: .8;
-	-webkit-transition-property: top, opacity;
-    -webkit-transition-duration: .6s;
 	.container {
 		width: 960px;
 	}
@@ -37,31 +30,26 @@
 		padding: 10px;
 	}
 }
+#navbar3 {
+	font-size: 16px;
+}
 .hide {
 	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;
 }
 .show {
-	opacity: .8;
+	opacity: 1;
+	-webkit-transition: top 1s ease-in-out;
 }
 #dock.expand {
 	top: 0;
 }
-
-
 .nav-wrapper {
 	height: 40px;
 }
 .nav-container {
-	
-	div {
-/*		width:940px;*/
-/*		padding:10px;*/
-/*		outline: 1px solid #aaa;*/
-/*		margin: 20px 0;*/
-	}
 	#hero {
 		height:460px;
-		
 	}
 	#features {
 		height: 570px;		
@@ -87,15 +75,23 @@
 #navbar1 {
 	background-color:#365EBF;
 	background-image:url("");
-	-webkit-transition: top, position 1s ease-in-out;
     .nav > li > a {
 		color: #fafafa;
 	}
+/*	-webkit-transition: all 1s ease-in-out;*/
+/*	-webkit-transition-property: all;
+    -webkit-transition-duration: 1s;*/
+/*	.navbar-fixed-top {
+		-webkit-transition: all 1s ease-in-out;
+	}*/
 }
-.navbar-fixed-top {
-/*	-webkit-transition-property: top, position;
-    -webkit-transition-duration: 1s ease-in;*/
-	-webkit-transition: top, 1.5s ease-in-out;
+.fixed1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: .9;
+/*	-webkit-transition:all 1s ease-in-out .5s;*/
 }
 #navblock1 {
 	height: 80px;
@@ -112,20 +108,18 @@
 		padding: 0 10px;
 		font-size: 16px;
 	}
-	-webkit-transition-property: top, opacity, position, z-index;
-    -webkit-transition-duration: .2s;
 }
 .fixed2 {
 	position: fixed;
 	top: 40px;
 	left: 0;
 	right: 0;
-	background-color: #eee;
+	background-color: #fbfbfb;
 
-	opacity: 1;
+	opacity: .9;
 	z-index: 1000;
 	.nav > li > a {
 		color: #365EBF;
 	}
-/*	padding: 20px 0 0;*/
+	-webkit-transition: top 1s ease-in-out;
 }

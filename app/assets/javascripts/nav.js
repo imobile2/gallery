@@ -1,4 +1,5 @@
-jQuery(function() {
+$(window).load(function() {
+
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		
@@ -6,13 +7,22 @@ jQuery(function() {
 		var navbar4 = $("#navbar4");
 		// if (!navbar1.hasClass('navbar-fixed-top') && (scrollTop > navbar1.offset().top + parseInt(navbar1.css('height')))) {		
 		if (scrollTop > 135) {	
-			if (!navbar1.hasClass('navbar-fixed-top'))	
-				navbar1.addClass('navbar-fixed-top');
+			if (!navbar1.hasClass('navbar-fixed-top')) {	
+				navbar1.addClass('navbar-fixed-top').hide().fadeIn(1000);
+			}	
 		} else {
 			if (navbar1.hasClass('navbar-fixed-top'))
 				navbar1.removeClass('navbar-fixed-top');
 		}
-
+		// if (scrollTop > 135) {	
+		// 	if (!navbar1.hasClass('fixed1')) {	
+		// 		navbar1.addClass('fixed1').hide().fadeIn(1000);
+		// 	}
+		// } else {
+		// 	if (navbar1.hasClass('fixed1'))
+		// 		navbar1.removeClass('fixed1');
+		// }
+		
 		if (scrollTop > 605) {
 			if (!navbar4.hasClass('fixed2'))	
 				navbar4.addClass('fixed2');
@@ -55,4 +65,10 @@ jQuery(function() {
 			dock.removeClass("expand");
 		}		
 	});
+	// scrolling to section
+	$("#navbar4, #navbar3").on('click', 'a', function(e) {
+		e.preventDefault();
+		var to = $($(this).attr('href')).offset().top - 80;
+		$('body').animate({scrollTop: to}, 1000);
+	})
 });
