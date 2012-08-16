@@ -19,4 +19,7 @@ class StaticPagesController < ApplicationController
   def nav
     render :layout => "layouts/nav.html.erb"
   end
+  def full
+    render :layout => "layouts/full.html.erb"
+  end
 end

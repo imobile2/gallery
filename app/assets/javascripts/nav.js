@@ -1,3 +1,5 @@
+//= require jquery
+
 $(window).load(function() {
 
 	$(window).scroll(function() {
@@ -6,9 +8,10 @@ $(window).load(function() {
 		var navbar1 = $("#navbar1");
 		var navbar4 = $("#navbar4");
 		// if (!navbar1.hasClass('navbar-fixed-top') && (scrollTop > navbar1.offset().top + parseInt(navbar1.css('height')))) {		
-		if (scrollTop > 135) {	
+		if (scrollTop > 140) {	
 			if (!navbar1.hasClass('navbar-fixed-top')) {	
-				navbar1.addClass('navbar-fixed-top').hide().fadeIn(1000);
+				// navbar1.addClass('navbar-fixed-top').hide().fadeIn(1000);
+				navbar1.addClass('navbar-fixed-top')
 			}	
 		} else {
 			if (navbar1.hasClass('navbar-fixed-top'))

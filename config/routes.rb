@@ -30,6 +30,7 @@ SampleApp::Application.routes.draw do
 
   match '/violator',    to: 'static_pages#violator'
   match '/nav',    to: 'static_pages#nav'
+  match '/full',    to: 'static_pages#full'
   
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:

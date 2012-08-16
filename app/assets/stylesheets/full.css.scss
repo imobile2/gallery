@@ -1,0 +1,48 @@
+@import "bootstrap";
+
+body {
+	font: 14/18px "Lucida Grande";
+}
+@mixin light-border {
+	border-left: 10px solid #efefef;
+	border-right: 10px solid #efefef;
+	padding: 20px 0;
+}
+header .container {
+	padding: 20px 0;
+}
+#hero {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#hero-inner {
+	background-image: url('/assets/square-hero.jpg');
+	background-position: center;
+	background-size: 1980px 688px;
+	height:388px;	
+}
+
+#main {
+/*	height: 800px;	*/
+	@include light-border;
+}
+#features {
+	height: 570px;		
+}
+#works {
+	height: 570px;
+}
+#pricing {
+	height: 600px;
+}
+#reviews {
+	height: 700px;
+}
+
+#footer1 {
+	height: 400px;
+	background-color:#eee;
+	@include light-border;
+}
+
