@@ -22,4 +22,7 @@ class StaticPagesController < ApplicationController
   def full
     render :layout => "layouts/full.html.erb"
   end
+  def payroll
+    render :layout => "layouts/payroll.html.erb"
+  end
 end

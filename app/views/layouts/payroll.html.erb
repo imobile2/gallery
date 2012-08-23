@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag    "payroll", :media => "all" %>
+  <%= javascript_include_tag "payroll" %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+
+	<!-- 960 gridder http://peol.github.com/960gridder/ -->
+	<script type="text/javascript">
+	var gOverride = {
+	  urlBase: 'http://gridder.andreehansson.se/releases/latest/',
+	  gColor: '#EEEEEE',
+	  gColumns: 12,
+	  gOpacity: 0.35,
+	  gWidth: 10,
+	  pColor: '#C0C0C0',
+	  pHeight: 6,
+	  pOffset: 0,
+	  pOpacity: 0.55,
+	  center: true,
+	  gEnabled: true,
+	  pEnabled: true,
+	  setupEnabled: true,
+	  fixFlash: true,
+	  size: 960
+	};
+	createGridder = function() {
+	  document.body.appendChild(
+	    document.createElement('script'))
+	    .src='http://peol.github.com/960gridder/releases/1.3.1/960.gridder.js';
+	}
+</script>
+</head>
+<!-- <body onload="createGridder()"> -->
+<body>
+	
+    <!-- <div class="container"> -->
+
+    <%= yield %>
+	  <!-- <%= debug(params) if Rails.env.development? %> -->
+	<!-- </div>	 -->
+</body>
+
+</html>

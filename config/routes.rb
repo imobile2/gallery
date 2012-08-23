@@ -28,9 +28,10 @@ SampleApp::Application.routes.draw do
   match '/grid',    to: 'static_pages#grid'
   match '/font',    to: 'static_pages#font'
 
-  match '/violator',    to: 'static_pages#violator'
-  match '/nav',    to: 'static_pages#nav'
-  match '/full',    to: 'static_pages#full'
+  match '/violator',    to: 'static_pages#violator' # explore violator
+  match '/nav',    to: 'static_pages#nav'   # explore possible navigations
+  match '/full',    to: 'static_pages#full' # prototype: overall page layout 
+  match '/payroll',    to: 'static_pages#payroll'
   
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:
