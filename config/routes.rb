@@ -32,6 +32,7 @@ SampleApp::Application.routes.draw do
   match '/nav',    to: 'static_pages#nav'   # explore possible navigations
   match '/full',    to: 'static_pages#full' # prototype: overall page layout 
   match '/payroll',    to: 'static_pages#payroll'
+  match '/dropdown',    to: 'static_pages#dropdown'
   
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:

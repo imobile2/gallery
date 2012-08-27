@@ -25,4 +25,7 @@ class StaticPagesController < ApplicationController
   def payroll
     render :layout => "layouts/payroll.html.erb"
   end
+  def dropdown
+    render :layout => "layouts/dropdown.html.erb"
+  end
 end
