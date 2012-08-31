@@ -28,4 +28,15 @@ class StaticPagesController < ApplicationController
   def dropdown
     render :layout => "layouts/dropdown.html.erb"
   end
+  def symphony_basic
+    render :layout => "layouts/symphony.html.erb"
+  end
+  def symphony_enhanced
+    render :layout => "layouts/symphony.html.erb"
+  end
+  def symphony_fullservice
+    render :layout => "layouts/symphony.html.erb"
+  end
+
+
 end

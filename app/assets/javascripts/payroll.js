@@ -1,11 +1,12 @@
 //= require jquery
 
 $(window).load(function() {
+	// return;
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		var pnav = $("#pnav-wrapper");
 	
-		if (scrollTop > 570) {
+		if (scrollTop > 444) {
 			if (!pnav.hasClass('fixed'))	
 				pnav.addClass('fixed');
 		} else {

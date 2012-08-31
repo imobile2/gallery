@@ -180,7 +180,7 @@ h3 {
 	top: 84px;
 	left: 50%;
 	margin-left: -523px;
-	-webkit-transition: top .8s ease-in-out;
+/*	-webkit-transition: top .8s ease-in-out;*/
 }
 /*end of page nav*/
 /*main*/
@@ -201,8 +201,17 @@ h3 {
 	h2 {
 		font-size: 36px;
 		font-weight: normal;
-		margin-bottom: 54px;
+		margin-bottom: 48px;
 		color: #506b95;
+	}
+	h3 {
+		font-size: 20px;
+		margin-bottom: 6px;
+	}
+
+	ul li {
+		margin-left: 20px;
+		padding: 12px 0;
 	}
 }
 #overview {
@@ -211,20 +220,26 @@ h3 {
 .join-biz {
 	margin-top: 24px;
 	margin-right: 20px;
-	border: 1px solid #aaa;
-	height: 240px;
 }
 .join-biz-video {
-	margin-right: 40px;
 	margin-top: 90px;
-	border: 1px solid #aaa;
-	height:100px;
+	div {
+		font-size: 12px;
+		margin-top:36px;
+	}
 }
 #features {
-	height: 744px;
+	img {
+		margin: 18px auto;
+	}
+	.additional-features {
+		margin-top: 36px;
+	}
 }
 #how {
-	height:780px;
+	img {
+		margin: 24px 0;
+	}
 }
 #pricing {
 	height: 666px;

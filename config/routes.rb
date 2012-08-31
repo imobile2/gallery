@@ -34,6 +34,12 @@ SampleApp::Application.routes.draw do
   match '/payroll',    to: 'static_pages#payroll'
   match '/dropdown',    to: 'static_pages#dropdown'
   
+  # symphony usibility tests: 3 pages
+  match '/symphony_basic',    to: 'static_pages#symphony_basic'
+  match '/symphony_enhanced',    to: 'static_pages#symphony_enhanced'
+  match '/symphony_fullservice',    to: 'static_pages#symphony_fullservice'
+  
+  
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
