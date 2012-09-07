@@ -1,0 +1,72 @@
+@import "bootstrap";
+body {
+	margin: 0;
+}
+.main-bg {
+/*	background-position:center 0;*/
+/*	background-size:1120px 1541px;
+	height: px;*/
+/*	margin: 0 auto;*/
+}
+.frame-a {
+	background:url('/assets/usability/PageFrame-A.jpg')  center 0 no-repeat;
+	background-position:center 0;
+/*	background-size: 1120px 1541px;*/
+	height:1541px;
+	width:1120px;
+	margin: 0 auto;
+	position:relative;
+}
+.frame-c {
+	background:url('/assets/usability/PageFrame-C.jpg')  center 0 no-repeat;
+	background-position:center 0;
+/*	background-size: 1120px 1541px;*/
+	height:1663px;
+	width:1120px;
+	margin: 0 auto;
+	position:relative;
+}
+.frame-b {
+	background:url('/assets/usability/PageFrame-B.jpg')  center 0 no-repeat;
+	background-position:center 0;
+/*	background-size: 1120px 1541px;*/
+	height:3528px;
+	width:1120px;
+	margin: 0 auto;
+	position:relative;
+}
+.video-play {
+	height:80px;
+	width:80px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	background-color:#ccc;
+	opacity: .5;
+	position:absolute;
+	
+}
+.video-play:hover {
+	opacity: .1;
+}
+.frame-a .video-play {
+	top: 259px;
+	left: 839px;
+}
+.frame-c .video-play {
+	height:84px;
+	width:84px;
+	top: 255px;
+	left: 826px;
+}
+/* overwrite quick-nav*/
+.phone-info {
+	position:absolute;
+	top: 442px;
+	left: 370px;
+	color: #2c4b99;
+}
+.phone-info > .sub-menu > ul {
+	list-style: none;
+	margin-left: 0;
+}

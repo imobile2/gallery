@@ -37,6 +37,14 @@ class StaticPagesController < ApplicationController
   def symphony_fullservice
     render :layout => "layouts/symphony.html.erb"
   end
-
+  def frame_a
+    render :layout => "layouts/frame.html.erb"
+  end
+  def frame_b
+    render :layout => "layouts/frame.html.erb"
+  end
+  def frame_c
+    render :layout => "layouts/frame.html.erb"
+  end
 
 end
