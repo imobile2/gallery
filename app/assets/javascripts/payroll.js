@@ -18,6 +18,6 @@ $(window).load(function() {
 	$("#pnav").on('click', 'a', function(e) {
 		e.preventDefault();
 		var to = $($(this).attr('href')).offset().top - 100;
-		$('body').animate({scrollTop: to}, 800);
+		$('html,body').animate({scrollTop: to}, 800);
 	})
 });
