@@ -31,7 +31,7 @@ body {
 	background:url('/assets/usability/PageFrame-B.jpg')  center 0 no-repeat;
 	background-position:center 0;
 /*	background-size: 1120px 1541px;*/
-	height:3528px;
+	height:1788px;
 	width:1120px;
 	margin: 0 auto;
 	position:relative;
@@ -53,6 +53,20 @@ body {
 .frame-a .video-play {
 	top: 259px;
 	left: 839px;
+}
+#try-it-free-a {
+	position:absolute;
+	top: 685px;
+	left: 90px;
+}
+#try-it-free-c {
+	position:absolute;
+	top: 804px;
+	left: 130px;
+}
+.ctasecondary:hover {
+	color: #fff;
+	text-decoration: none;
 }
 .frame-c .video-play {
 	height:84px;
