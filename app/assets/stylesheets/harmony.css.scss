@@ -1,0 +1,60 @@
+@import "bootstrap";
+body {
+	margin: 0;
+	font-family: "Helvetica Neue";
+}
+.container1 {
+	background-color:#f5f5f5;
+	position:relative;
+}
+.main {
+	background:url('/assets/harmony/pay_112712.png') center 0 no-repeat;
+	height:5000px;
+	background-size: 1120px 5000px;
+}
+/* nav 1*/
+.inpage-nav1-wrapper {
+	background-color:transparent;
+	width:100%;
+	position:absolute;
+	top:514px;
+}
+.inpage-nav-cta {
+	width:1024px;
+	margin:0 auto;
+}
+.inpage-nav1 {
+	background:url('/assets/harmony/inpage-nav.png') #363a40 center center no-repeat;
+	height:55px;
+	
+	color:#fff;
+	font-size:18px;
+	font-weight:lighter;
+	.nav-item {
+		float:left;
+		margin-top:22px;
+		margin-left:80px;
+	}
+	#ni-features {
+		margin-left: 90px;
+	}
+	#ni-how {
+		margin-left:95px;
+	}
+	#ni-pricing {
+		margin-left:115px;
+	}
+	#ni-stories {
+		margin-left:125px;
+	}
+}
+.cta1 {
+	color:#fff;
+	font-size:18px;
+	background-color:#0e4392;
+	padding: 15px 20px 10px 20px;
+	float:right;
+}
+/* nav 2*/
+
+/* nav 3*/

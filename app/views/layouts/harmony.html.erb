@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= yield(:title) %></title>
+  <%= stylesheet_link_tag    "harmony", :media => "all" %>
+  <%= yield :assets %>
+</head>
+<body>
+	<%= yield %>
+</body>
+</html>

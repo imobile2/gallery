@@ -46,5 +46,13 @@ class StaticPagesController < ApplicationController
   def frame_c
     render :layout => "layouts/frame.html.erb"
   end
-
+  def harmony1
+    render :layout => "layouts/harmony.html.erb"
+  end
+  def harmony2
+    render :layout => "layouts/harmony.html.erb"
+  end
+  def harmony3
+    render :layout => "layouts/harmony.html.erb"
+  end
 end
