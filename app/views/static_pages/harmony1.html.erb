@@ -1,8 +1,12 @@
+<%= content_for :assets do %>
+	<%= javascript_include_tag "harmony1" %>
+<% end %>
 <div class="container1">
 	<div class="main">
 	</div>
-	<div class="inpage-nav1-wrapper">
-		<div class="inpage-nav-cta">		
+	<div class="inpage-nav1-wrapper fixed">
+		<div class="main-nav hide"></div>
+		<div class="inpage-nav1-outter">		
 			<div class="inpage-nav1">
 				<div class="nav-item" id="ni-overview">Overview</div>
 				<div class="nav-item" id="ni-features">Features</div>
@@ -10,9 +14,11 @@
 				<div class="nav-item" id="ni-pricing">Pricing</div>
 				<div class="nav-item" id="ni-stories">Customer Stories</div>
 			</div>
+		</div>
+		<div class="cta1-outter">
 			<div class="cta1">
 				Try Enhanced Free for 30 days
 			</div>
-		</div>
+		</div>	
 	</div>
 </div>
