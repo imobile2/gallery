@@ -1,7 +1,6 @@
 //= require jquery
 
 $(window).load(function() {
-	console.log($(".inpage-nav1-wrapper").offset().top);
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		var pnav = $(".inpage-nav1-wrapper");
@@ -21,4 +20,9 @@ $(window).load(function() {
 			}
 		}
 	});
+	$(".inpage-nav1").on('click', '.nav-item', function(e) {
+		e.preventDefault();
+		var to = $("#" + $(this).attr('id').substr(3)).offset().top - 120;
+		$('html,body').animate({scrollTop: to}, 1000);
+	})
 });
