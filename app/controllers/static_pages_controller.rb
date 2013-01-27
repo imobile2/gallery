@@ -55,4 +55,7 @@ class StaticPagesController < ApplicationController
   def harmony3
     render :layout => "layouts/harmony.html.erb"
   end
+  def iqb
+    render :layout => "layouts/iqb.html.erb"
+  end
 end

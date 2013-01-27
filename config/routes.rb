@@ -48,7 +48,9 @@ SampleApp::Application.routes.draw do
   match '/harmony1',    to: 'static_pages#harmony1'
   match '/harmony2',    to: 'static_pages#harmony2'
   match '/harmony3',    to: 'static_pages#harmony3'
-  
+
+  # qb ipad page
+  match '/iqb',         to: 'static_pages#iqb'
   # match 'index',    to: 'users#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
